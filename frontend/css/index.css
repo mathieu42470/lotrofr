@@ -1,0 +1,26 @@
+a{
+     text-decoration: none;
+     color: black;
+}
+
+
+
+.footer{
+     width: 100%;
+}
+.site{
+     display: flex;
+     border: solid black; 
+     border-radius: 20px; 
+     justify-content: space-around;
+     align-items: center;
+     margin:0 2% 2% 2%;        
+}
+.sites{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               border: solid black;
+               border-radius: 20px;
+               margin: 0 2% 0 2%;
+}
