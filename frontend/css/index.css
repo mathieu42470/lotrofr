@@ -2,6 +2,11 @@ a{
      text-decoration: none;
      color: black;
 }
+.chapitre{
+     border: solid black;
+     border-radius: 20px;
+     margin-bottom: 5%;
+}
 ul{
     list-style: none;
 }
@@ -11,8 +16,13 @@ ul{
      margin: 0 2% 2% 2%; 
      padding-left: 2%;
 }
-
-
+h2{
+     margin:2%;
+     text-decoration:underline ;
+}
+.p{
+     margin-left: 2%;
+}
 .footer{
      width: 100%;
 }
