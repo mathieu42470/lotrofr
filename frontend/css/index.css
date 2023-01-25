@@ -2,6 +2,20 @@ a{
      text-decoration: none;
      color: black;
 }
+header{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     border: dotted;
+     border-radius: 20px;
+}
+.form{
+     display: flex;
+     flex-direction: column;
+}
+.button{
+     margin: 2%;
+}
 .chapitre{
      border: solid black;
      border-radius: 20px;
