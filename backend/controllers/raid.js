@@ -1,3 +1,4 @@
+const { resourceLimits } = require('worker_threads');
 const db = require('../Mysqlparams');
 
 exports.signup =(req,res,next) =>{
@@ -18,17 +19,18 @@ exports.signup =(req,res,next) =>{
 }
 
 exports.getOneraid =  (req,res,next) =>{
-       db.query('SELECT * FROM lotrofr.raid WHERE idraid =?', req.params.idraid, (err, result)=>{
+       db.query('SELECT niveauraid, boss1, boss2, boss3, boss4, boss5 FROM lotrofr.raid WHERE nomraid= ?',req.body.nomraid, (err, result)=>{
                if(err){
                        return res.status(500).json({message: err.message})       
                }else{
                               var row = '';
                               Object.keys(result).forEach((key) => {
-                                 row = result;                        
+                                 row = result[key];                       
                               });                 
                               if(err){
                                 return res.status(500).json({message : err.message})
                                }else{    
+                                    console.log(result)
                                  return res.status(200).json({message : result})
                                 }
                     } 

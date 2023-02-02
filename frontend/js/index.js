@@ -16,7 +16,7 @@ button.addEventListener("click", (e) =>{
                  body: JSON.stringify(email)
             })
             .then( response => response.json()).then(idjoueur =>{
-              localStorage.setItem('idjoueur', JSON.stringify(idjoueur));
+              sessionStorage.setItem('idjoueur', JSON.stringify(idjoueur));
             })
 })
 
