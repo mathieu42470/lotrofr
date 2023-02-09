@@ -30,7 +30,6 @@ exports.getOneraid =  (req,res,next) =>{
                               if(err){
                                 return res.status(500).json({message : err.message})
                                }else{    
-                                    console.log(result)
                                  return res.status(200).json({message : result})
                                 }
                     } 

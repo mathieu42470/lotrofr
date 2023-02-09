@@ -3,6 +3,6 @@ const router = express.Router();
 
 const instance = require('../controllers/instance');
 
-router.get('/:idinstance', instance.getOneinstance);
+router.post('/', instance.getOneinstance);
 
 module.exports = router;
