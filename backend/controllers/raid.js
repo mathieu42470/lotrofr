@@ -1,4 +1,3 @@
-const { resourceLimits } = require('worker_threads');
 const db = require('../Mysqlparams');
 
 exports.signup =(req,res,next) =>{
