@@ -4,12 +4,14 @@ exports.signup=(req,res,next) =>{
                let data = {
                               pseudo: req.body.pseudo,
                               email: req.body.email,
+                              password : req.body.password,
                }
+               
                db.query('INSERT INTO joueur SET ?', data, (err, rows)=>{
                      if(err){
                               return res.status(500).json({message: err.message})
                      }else{
-                              return res.status(200).json({message: 'joueur ajouté'})
+                       return res.status(200).json({message: 'joueur ajouté'})
                      }
                })
 } 

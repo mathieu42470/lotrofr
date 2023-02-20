@@ -5,6 +5,7 @@ button.addEventListener("click", (e) =>{
                e.preventDefault();
              email ={
                email : document.getElementById("email").value,
+               password: document.getElementById("password").value,
             }
 
             fetch('http://localhost:3000/api/joueur/login', {
@@ -25,7 +26,9 @@ bouton.addEventListener("click", (e)=>{
     data ={
       pseudo : document.getElementById("pseudo2").value,
       email : document.getElementById("email2").value,
+      password: document.getElementById("password2").value,
     }
+    console.log(data)
     fetch('http://localhost:3000/api/joueur/signup',{
       method: 'POST',
       headers : {
