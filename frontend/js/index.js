@@ -7,7 +7,6 @@ button.addEventListener("click", (e) =>{
                email : document.getElementById("email").value,
                password: document.getElementById("password").value,
             }
-
             fetch('http://localhost:3000/api/joueur/login', {
                  method: 'POST',
                  headers:{
@@ -16,8 +15,8 @@ button.addEventListener("click", (e) =>{
                },
                  body: JSON.stringify(email)
             })
-            .then( response => response.json()).then(idjoueur =>{
-              sessionStorage.setItem('idjoueur', JSON.stringify(idjoueur));
+            .then( response => response.json()).then(token =>{
+              sessionStorage.setItem('token', JSON.stringify(token));
             })
 })
 
@@ -28,7 +27,6 @@ bouton.addEventListener("click", (e)=>{
       email : document.getElementById("email2").value,
       password: document.getElementById("password2").value,
     }
-    console.log(data)
     fetch('http://localhost:3000/api/joueur/signup',{
       method: 'POST',
       headers : {
