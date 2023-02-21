@@ -33,13 +33,10 @@ exports.login=(req, res, next) =>{
                                  row = result[key];  
                                                
                                  });                                   
-                                }
-                                next;        
-                     if(result.lenght > 0){  
-                     
+                                }       
+                     if(result.lenght > 0){ 
                                bcrypt.compare(req.body.password,row.password).then((valid) => {
                                 if(valid){
-                                   console.log(req.body) 
                                   res.status(200).json({joueur: row,token: jwt.sign(
                                    {idjoueur: row.idjoueur},
                                    process.env.JWT,
