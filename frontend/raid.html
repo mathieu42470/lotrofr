@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html>
       <head>
-
-      </head> 
-      <body>
-               
-      </body>        
+             <link rel="stylesheet" href="css/index.css">
+               <title>Lotrofr.fr</title>
+      </head>
+        <body>
+              <header>
+                  <h1>Le site français pour LOTRO</h1>
+              </header>
+              <main>
+                <div class="class" >                  
+                  <h1>Les raids</h1>
+                  <p>Les raids sont souvent en fin de région ou d'extension. Les raids permet souvent d'obtenir du stuff dit fixé qui ont des statistiques en lien avec le nombre de piéces que nous avons.</p>
+                  <div class="class2">
+                  <h2>Rechercher votre raid </h2>
+                 <div>
+                  <label class="form">Noms du raid: </label>
+                  <input class="form" id="raid" type="text">
+                  <button id="bouton">Rechercher</button>
+                 </div>
+            </div>
+                 <div>
+                  <h2>Créer l'explication du raid</h2>
+                  <div>
+                   <div>
+                   <label class="form">Noms du raid: </label>
+                  <input class="form" id="nomraid" type="text">
+                  </div>
+                  <div>
+                        <label class="form">Niveau: </label>
+                       <input class="form" id="niveauraid" type="number">
+                  </div> 
+                  <div>
+                        <label class="form">Boss 1: </label>
+                       <textarea class="form" id="bossraid1" name="text"></textarea>
+                  </div>
+                  <div>
+                        <label class="form">Boss 2: </label>
+                       <textarea class="form" id="bossraid2" type="text"></textarea>
+                  </div> 
+                  <div>
+                        <label class="form">Boss 3: </label>
+                       <textarea class="form" id="bossraid3" type="text"></textarea>
+                  </div>   
+                  <div>
+                        <label class="form">Boss 4: </label>
+                       <textarea class="form" id="bossraid4" type="text"></textarea>
+                  </div>      
+                  <div>
+                        <label class="form">Boss 5: </label>
+                       <textarea class="form" id="bossraid5" type="text"></textarea>
+                  </div> 
+                  <button id="boutton">Créer un nouveau raid</button>
+                  </div>
+                 </div>
+               </div>
+             </main>
+             <footer>
+               <div class="footer">
+               <div class="site">
+               <h1>site officiel : </h1>
+                  <p>Le site <a href="https://www.lotro.com/home">officiel</a> liée au jeu du seigneur des anneaux online(SDAO)</p>
+                </div>
+                <div class="sites">
+                 <h1>autres sites : </h1>
+                <p> Le site du <a href="http://lotro-wiki.fr/index.php/Accueil">wiki lotro</a> français. Site fait par les fans pour aider sur des quêtes et des récompenses.</p>
+                 <p> Le site du <a href="https://lotro.fr/">raid planner</a> permet de planifier ses raids ou de s'inscrire à des raids</p>
+              </div>
+             </div>
+           </footer>      
+      </body> 
+      <script src="js/raid.js"></script>
 </html>

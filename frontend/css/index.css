@@ -56,3 +56,12 @@ h2{
                border-radius: 20px;
                margin: 0 2% 0 2%;
 }
+.class{
+     display: flex;
+     flex-direction: column;
+     border-radius: 20px;
+     border: solid;
+     margin: 2%;
+     padding: 2%;
+     width: 90%;
+}

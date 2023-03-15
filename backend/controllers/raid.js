@@ -3,7 +3,7 @@ const db = require('../Mysqlparams');
 exports.signup =(req,res,next) =>{
                let data={
                         nomraid: req.body.nomraid,
-                        niveau: req.body.niveauraid,
+                        niveau: req.body.niveau,
                         boss1: req.body.boss1,
                         boss2: req.body.boss2,
                         boss3: req.body.boss3,      
@@ -26,7 +26,7 @@ exports.modifyRaid = (req, res, next) =>{
 //           boss2: req.body.boss2,
 //           boss3: req.body.boss3,   
 //      }
-     db.query('UPDATE raid SET nomraid= ?, niveau= ?, boss1= ?, boss2= ?, boss3= ? WHERE idraid= ?;', [req.body.nomraid, req.body.niveauraid, req.body.boss1, req.body.boss2, req.body.boss3, req.body.idraid], (err, result)=>{
+     db.query('UPDATE lotrofr.raid SET nomraid= ?, niveau= ?, boss1= ?, boss2= ?, boss3= ?, boss4= ?, boss5= ? WHERE idraid= ?;', [req.body.nomraid, req.body.niveau, req.body.boss1, req.body.boss2, req.body.boss3, req.body.boss4, req.body.boss5,req.body.idraid ], (err, result)=>{
           if(err){
                return res.status(500).json({message: err.message})
           }else{
@@ -36,8 +36,8 @@ exports.modifyRaid = (req, res, next) =>{
 }
 
 exports.getOneraid =  (req,res,next) =>{
-       db.query('SELECT idraid, niveauraid, boss1, boss2, boss3, boss4, boss5 FROM lotrofr.raid WHERE nomraid= ?',req.body.nomraid, (err, result)=>{
-               if(err){
+       db.query('SELECT idraid, niveau, boss1, boss2, boss3, boss4, boss5 FROM lotrofr.raid WHERE nomraid= ?',req.body.nomraid, (err, result)=>{             
+          if(err){
                        return res.status(500).json({message: err.message})       
                }else{
                               var row = '';
@@ -52,3 +52,5 @@ exports.getOneraid =  (req,res,next) =>{
                     } 
        })        
 }
+
+// [req.body.nomraid, req.body.niveau, req.body.boss1, req.body.boss2, req.body.boss3, req.body.boss4, req.body.boss5, req.body.idraid]
