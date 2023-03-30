@@ -36,7 +36,7 @@ exports.modifyRaid = (req, res, next) =>{
 }
 
 exports.getOneraid =  (req,res,next) =>{
-       db.query('SELECT idraid, niveau, boss1, boss2, boss3, boss4, boss5 FROM lotrofr.raid WHERE nomraid= ?',req.body.nomraid, (err, result)=>{             
+       db.query('SELECT * FROM lotrofr.raid WHERE nomraid= ?',req.body.nomraid, (err, result)=>{             
           if(err){
                        return res.status(500).json({message: err.message})       
                }else{

@@ -30,8 +30,7 @@ exports.login=(req, res, next) =>{
                      }else{
                                var row = '';
                                 Object.keys(result).forEach(function(key) {
-                                 row = result[key];  
-                                               
+                                 row = result[key];                                   
                                  });                                   
                                 }       
                      if(result.lenght > 0){ 

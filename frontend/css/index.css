@@ -65,3 +65,19 @@ h2{
      padding: 2%;
      width: 90%;
 }
+.ensemblenom{
+     display: flex;
+     flex-direction: column;
+     border: dotted;
+     border-radius: 20px;
+     margin: 2%;
+     padding: 2%;
+}
+.bossinstance{
+     display: flex;
+     flex-direction: column;
+     border: dotted;
+     border-radius: 20px;
+     margin: 2%;
+     padding: 2%;
+}
