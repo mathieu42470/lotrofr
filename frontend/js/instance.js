@@ -29,6 +29,12 @@ button.addEventListener('click', (e) =>{
 <div class="bossinstance"><h2>boss 3 </h2>
 <p>${response.message[a].boss3} </p>
 </div>
+<div class="bossinstance"><h2>boss 4 </h2>
+<p>${response.message[a].boss4} </p>
+</div>
+<div class="bossinstance"><h2>boss 5 </h2>
+<p>${response.message[a].boss5} </p>
+</div>
 `
  let instanc = document.getElementById('instanc');
 instanc.innerHTML = instance

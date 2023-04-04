@@ -15,7 +15,6 @@ bouton.addEventListener('click', (e) =>{
     }).then( response => response.json()).then(response =>{
       let raid = [];
    for (b = 0; b < response.message.length; b++){
-      console.log(raid)
      raid = response + `
 <div class="ensemblenom"> <p>Nom du raid: ${response.message[b].nomraid}</p>
 <p>Niveau du raid: T ${response.message[b].niveau}</p>
@@ -28,6 +27,12 @@ bouton.addEventListener('click', (e) =>{
 </div>
 <div class="bossinstance"><h2>boss 3 </h2>
 <p>${response.message[b].boss3} </p>
+</div>
+<div class="bossinstance"><h2>boss 4 </h2>
+<p>${response.message[b].boss4} </p>
+</div>
+<div class="bossinstance"><h2>boss 5 </h2>
+<p>${response.message[b].boss5} </p>
 </div>
 `
 let raids = document.getElementById('raids');

@@ -42,7 +42,7 @@ exports.getOneraid =  (req,res,next) =>{
                }else{
                               var row = '';
                               Object.keys(result).forEach((key) => {
-                                 row = result[key];                       
+                                 row = result[key];                     
                               });                 
                               if(err){
                                 return res.status(500).json({message : err.message})
