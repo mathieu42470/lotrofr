@@ -64,5 +64,5 @@ boutton.addEventListener('click', (e) =>{
             },
             body: JSON.stringify(data)
             
-      }); console.log(data)
+      });
 })

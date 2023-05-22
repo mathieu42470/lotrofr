@@ -6,7 +6,9 @@ exports.signup =(req,res,next) =>{
                         niveau: req.body.niveau,
                         boss1: req.body.boss1,
                         boss2: req.body.boss2,
-                        boss3: req.body.boss3,      
+                        boss3: req.body.boss3,
+                        boss4: req.body.boss4,
+                        boss5: req.body.boss5      
                }
                db.query('INSERT INTO raid SET ?', data, (err, rows)=>{
                               if(err){
