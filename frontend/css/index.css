@@ -81,3 +81,23 @@ h2{
      margin: 2%;
      padding: 2%;
 }
+.menue{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+.lien{
+     display: flex;
+     flex-direction: row;
+     width: 90%;
+     
+}
+.liens{
+     display: flex;
+     margin-left: 1%;
+     width: 20%;
+     font-weight: bold ;
+     border: dotted red;
+     border-radius:  20px;
+
+}
